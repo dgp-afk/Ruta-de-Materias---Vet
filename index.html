@@ -2,11 +2,11 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Malla Curricular Veterinaria UBA</title>
+  <title>Ruta de Materias - Veterinaria UBA</title>
   <style>
     body {
       font-family: "Segoe UI", sans-serif;
-      background: #f8f9fa;
+      background: #e1c7ed;
       margin: 0;
       padding: 1rem;
       color: #333;
@@ -21,7 +21,7 @@
       gap: 1rem;
     }
     .column {
-      background: #fff;
+      background: #fcdcf3;
       border-radius: 8px;
       padding: 1rem;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -42,10 +42,10 @@
       transition: background 0.3s;
     }
     .subject.approved {
-      background: #a8dadc;
+      background: #b8fca2;
     }
     .subject.regular {
-      background: #ffd166;
+      background: #fcdda2;
     }
     .subject.locked {
       background: #dee2e6;
@@ -83,15 +83,15 @@ const curriculumData = {
     { code: "CBC6", name: "Matemática" }
   ],
   "1ER AÑO": [
-    { code: "201", name: "Anatomía I", requiresApproved: ["CBC"] },
+    { code: "201", name: "Anatomía I", requiresApproved: ["CBC1","CBC2","CBC3","CBC4","CBC5","CBC6"] },
     { code: "202", name: "Física Biológica", requiresRegular: ["203", "603"] },
-    { code: "203", name: "Química Orgánica de Biomoléculas", requiresApproved: ["CBC"] },
-    { code: "206", name: "Anatomía II", requiresApproved: ["CBC"] },
-    { code: "208", name: "Inglés Técnico", requiresApproved: ["CBC"] },
-    { code: "701", name: "Actividades de Orientación", requiresApproved: ["CBC"] },
-    { code: "603", name: "Elementos de Estadística", requiresApproved: ["CBC"] },
+    { code: "203", name: "Química Orgánica de Biomoléculas", requiresApproved: ["CBC1","CBC2","CBC3","CBC4","CBC5","CBC6"] },
+    { code: "206", name: "Anatomía II", requiresApproved: ["CBC1","CBC2","CBC3","CBC4","CBC5","CBC6"] },
+    { code: "208", name: "Inglés Técnico", requiresApproved: ["CBC1","CBC2","CBC3","CBC4","CBC5","CBC6"] },
+    { code: "701", name: "Actividades de Orientación", requiresApproved: ["CBC1","CBC2","CBC3","CBC4","CBC5","CBC6"] },
+    { code: "603", name: "Elementos de Estadística", requiresApproved: ["CBC1","CBC2","CBC3","CBC4","CBC5","CBC6"] },
     { code: "604", name: "Estadística Analítica", requiresRegular: ["603"] },
-    { code: "814", name: "Sociología", requiresApproved: ["CBC"] }
+    { code: "814", name: "Sociología", requiresApproved: ["CBC1","CBC2","CBC3","CBC4","CBC5","CBC6"] }
   ],
   "2DO AÑO": [
     { code: "204", name: "Química Biológica", requiresRegular: ["202", "203"] },
